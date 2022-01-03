@@ -1,7 +1,9 @@
 
 
-opencv-python== 4.5.4.60
+
+opencv-python== 4.5.4.58
 numpy==1.20.3
 Python ==3.9.7
 Flask== 1.1.2
 Werkzeug ==2.0.2
+
