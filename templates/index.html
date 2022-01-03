@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel=" icon" href="PENCIL DRAWING CONVERTER-logos_transparent.png" type="image/x-icon" />
+    <title>Pencil Drawing Converter</title>
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+              
+            <h3 class="animate-charcter"> PENCIL DRAWING CONVERTER</h3>
+            
+          </div>
+        </div>
+      </div>
+    <form action = "http://localhost:3001/uploader" method = "POST"
+          enctype = "multipart/form-data">
+    <div style="font-size:1.5em" class="h">
+        <input type = "file"  class="button5" style="background-color:#42cc8c;"name = "file" />
+        <input type = "submit" class="button5" value="Convert"/>
+    </div>
+         </form>
+    
+    <img src="{{url_for('static',filename = 'images/hello-removebg-preview.png')}}" class="h1" alt="" width="250" height="300">
+    <img src="{{url_for('static',filename = 'images/OIP-removebg-preview.png')}}" class="h1" alt="" width="250" height="200">
+    <img src="{{url_for('static',filename = 'images/sketch-removebg-preview.png')}}" class="h1" alt="" width="250" height="300">
+
+</body>
+</html>
